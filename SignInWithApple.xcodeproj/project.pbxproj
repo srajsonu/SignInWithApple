@@ -13,6 +13,8 @@
 		C4A9BBCC2340C06D00DA350F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A9BBCA2340C06D00DA350F /* Main.storyboard */; };
 		C4A9BBCE2340C07000DA350F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4A9BBCD2340C07000DA350F /* Assets.xcassets */; };
 		C4A9BBD12340C07000DA350F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A9BBCF2340C07000DA350F /* LaunchScreen.storyboard */; };
+		C4A9BBD92340C08500DA350F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A9BBD82340C08500DA350F /* User.swift */; };
+		C4A9BBDB2340C15D00DA350F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A9BBDA2340C15D00DA350F /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,9 @@
 		C4A9BBCD2340C07000DA350F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4A9BBD02340C07000DA350F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4A9BBD22340C07000DA350F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4A9BBD82340C08500DA350F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C4A9BBDA2340C15D00DA350F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C4A9BBDC2340C2BD00DA350F /* SignInWithApple.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SignInWithApple.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,7 @@
 		C4A9BBC32340C06D00DA350F /* SignInWithApple */ = {
 			isa = PBXGroup;
 			children = (
+				C4A9BBDC2340C2BD00DA350F /* SignInWithApple.entitlements */,
 				C4A9BBC42340C06D00DA350F /* AppDelegate.swift */,
 				C4A9BBC62340C06D00DA350F /* SceneDelegate.swift */,
 				C4A9BBC82340C06D00DA350F /* ViewController.swift */,
@@ -63,6 +69,8 @@
 				C4A9BBCD2340C07000DA350F /* Assets.xcassets */,
 				C4A9BBCF2340C07000DA350F /* LaunchScreen.storyboard */,
 				C4A9BBD22340C07000DA350F /* Info.plist */,
+				C4A9BBD82340C08500DA350F /* User.swift */,
+				C4A9BBDA2340C15D00DA350F /* MainViewController.swift */,
 			);
 			path = SignInWithApple;
 			sourceTree = "<group>";
@@ -138,9 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4A9BBD92340C08500DA350F /* User.swift in Sources */,
 				C4A9BBC92340C06D00DA350F /* ViewController.swift in Sources */,
 				C4A9BBC52340C06D00DA350F /* AppDelegate.swift in Sources */,
 				C4A9BBC72340C06D00DA350F /* SceneDelegate.swift in Sources */,
+				C4A9BBDB2340C15D00DA350F /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,14 +294,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SignInWithApple/SignInWithApple.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8DK24LJL9A;
+				DEVELOPMENT_TEAM = WTC8AXLG54;
 				INFOPLIST_FILE = SignInWithApple/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hitachipaymentservices.SignInWithApple;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hitachipaymentservices.SIWA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,14 +313,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SignInWithApple/SignInWithApple.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8DK24LJL9A;
+				DEVELOPMENT_TEAM = WTC8AXLG54;
 				INFOPLIST_FILE = SignInWithApple/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hitachipaymentservices.SignInWithApple;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hitachipaymentservices.SIWA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
